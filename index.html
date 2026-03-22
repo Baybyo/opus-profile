@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- DOCTYPE = kasih tau browser ini file HTML5 -->
+<html lang="id">
+
+<head>
+  <!-- HEAD = pengaturan tersembunyi, ga keliatan user -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPUS — Hacker TTzzy</title>
+
+  <style>
+    /* CSS = pengatur tampilan */
+    
+    * {
+      margin: 10;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0a0a0a;    /* latar hitam */
+      color: #00ff00;               /* teks hijau terminal */
+      font-family: 'Courier New', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px;
+      border: 1px solid #00ff00;
+      max-width: 600px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 48px;
+      letter-spacing: 8px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #888;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .skill-tag {
+      background: #003300;
+      border: 1px solid #00ff00;
+      padding: 5px 15px;
+      font-size: 12px;
+      /* ini yang disebut "badge" di banyak website */
+    }
+
+    .status {
+      margin-top: 30px;
+      color: #ffff00;
+      font-size: 13px;
+    }
+
+    /* Animasi kursor berkedip — ini pure CSS */
+    .cursor {
+      display: inline-block;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- BODY = semua yang keliatan user -->
+  
+  <div class="container">
+    
+    <h1>OPUS</h1>
+    <p class="subtitle">// Hacker in Training · Bug Bounty Hunter · Builder</p>
+
+    <div class="skills">
+      <!-- Nanti kamu isi sesuai skill yang udah kamu kuasai -->
+      <span class="skill-tag">HTML</span>
+      <span class="skill-tag">DevTools</span>
+      <span class="skill-tag">DOM Manipulation</span>
+      <span class="skill-tag">Learning...</span>
+    </div>
+
+    <p>Sedang mempelajari cara kerja internet<br>untuk memahaminya lebih dalam.</p>
+
+    <div class="status">
+      <p>[ STATUS: ONLINE ]<span class="cursor">_</span></p>
+      <p>Quest selesai hari ini: 2</p>
+      <p>XP Total: 350</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
